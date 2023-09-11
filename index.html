@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel="icon" href="/favicon.ico"><title>全球Whois查询 - 天天hu，天天新米</title><meta name="Keywords" content="whois,全球Whois查询,非主流whois查询,国别whois查询,新顶级whois查询,站长工具,域名工具"><meta name="description" content="也许是全球最好的whois查询。支持全球1700个域名后缀的whois信息查询，溢价与续费价格查询，域名批量查询注册状态等。"><link rel="manifest" href="/manifest.json"><script>// serviceWorker// 检查serviceWorker属性是否可用
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("./serviceWorker.js")
+                .then(res => console.log("service worker registered"))
+                .catch(err => console.log("service worker not registered", err));
+        })} 
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // window.deferredPrompt = e;
+        });</script><script>const DEST_LIST_US = [
+            'cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js',
+            'cdn.jsdelivr.net/npm/vue-i18n@8.26.7/dist/vue-i18n.min.js',
+            'cdn.jsdelivr.net/npm/qs@6.11.0/dist/qs.js',
+            'cdn.jsdelivr.net/npm/axios@0.26.0/dist/axios.min.js',
+            'cdn.jsdelivr.net/npm/vue-router@3.5.3/dist/vue-router.min.js',
+            'cdn.jsdelivr.net/npm/element-ui@2.15.7/lib/index.js',
+            'cdn.jsdelivr.net/npm/vue-clipboard2@0.3.3/dist/vue-clipboard.min.js'
+        ];
+
+        const DEST_LIST_CN = [
+            'lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.11/vue.min.js',
+            'lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue-i18n/8.26.7/vue-i18n.min.js',
+            'lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qs/6.10.3/qs.min.js',
+            'lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/axios/0.26.0/axios.min.js',
+            'lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue-router/3.5.3/vue-router.js',
+            'lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/element-ui/2.15.7/index.min.js',
+            'lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue-clipboard2/0.3.3/vue-clipboard.min.js',
+        ];
+        const PREFIX = '//';
+        var lang = navigator.language || navigator.browserLanguage;
+
+        if (/^zh/.test(lang)) {
+            DEST_LIST_CN.forEach(element => {
+                var script = document.createElement("script");
+                var src = PREFIX + element;
+                document.write("<script src='" + src + "'><\/script>");
+            });
+        } else {
+            
+            DEST_LIST_US.forEach(element => {
+                var script = document.createElement("script");
+                var src = PREFIX + element;
+                document.write("<script src='" + src + "'><\/script>");
+            });
+        }</script><link href="/css/hack.843bab75.css" rel="prefetch"><link href="/css/register.cf17ab33.css" rel="prefetch"><link href="/css/tools.b7783b7e.css" rel="prefetch"><link href="/css/valuation.daf106d1.css" rel="prefetch"><link href="/js/hack.0023522a.js" rel="prefetch"><link href="/js/register.cd7105c1.js" rel="prefetch"><link href="/js/tools.ab3a1f8a.js" rel="prefetch"><link href="/js/unsupport.f2061dec.js" rel="prefetch"><link href="/js/valuation.163e4d4d.js" rel="prefetch"><link href="/css/app.054f0a80.css" rel="preload" as="style"><link href="/js/app.9e6fb261.js" rel="preload" as="script"><link href="/js/chunk-vendors.12447ba4.js" rel="preload" as="script"><link href="/css/app.054f0a80.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but domain-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.12447ba4.js"></script><script src="/js/app.9e6fb261.js"></script></body></html>
